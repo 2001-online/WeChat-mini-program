@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/login/login",
+    "pages/online/online",
+    "pages/phone/phone",
+    "pages/yue/yue"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/pages/image/底部四个按钮/首页.png",
+        "selectedIconPath": "/pages/image/底部四个按钮/首页 (1).png"
+      },{
+      "pagePath": "pages/online/online",
+      "text": "在线咨询",
+      "iconPath": "/pages/image/底部四个按钮/icon-1在线咨询.png",
+      "selectedIconPath": "/pages/image/底部四个按钮/icon-1在线咨询_副本.png"
+    },
+    {
+      "pagePath": "pages/phone/phone",
+      "text": "电话咨询",
+      "iconPath": "/pages/image/底部四个按钮/icon2-电话咨询.png",
+      "selectedIconPath": "/pages/image/底部四个按钮/icon2-电话咨询_副本.png"
+    },
+    {
+      "pagePath": "pages/yue/yue",
+      "text": "自助挂号",
+      "iconPath": "/pages/image/底部四个按钮/icon-3自助挂号.png",
+      "selectedIconPath": "/pages/image/底部四个按钮/icon-3自助挂号_副本.png"
+    }
+  ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "兰州中研白癜风医院",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "login":"/pages/login/login"
+  }
+  
+}
+

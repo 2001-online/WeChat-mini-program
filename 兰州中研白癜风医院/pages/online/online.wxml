@@ -1,0 +1,27 @@
+<!-- <web-view src="https://yiyuan.qiuyi.cn/"/> -->
+<!-- <view>
+  功能即将开放
+</view> -->
+
+<view class="online">
+  <view class="bgi">
+  <image src="https://res.bdfai.com/koubei/dsf/xcx/lz/chat.jpg" mode=""/>
+</view>
+
+
+  <view class="showModel">
+  <view class="title">
+    即将进入对话
+  </view>
+  <view class="content">
+    有什么问题都可以帮您解答
+  </view>
+  <button open-type="contact">点击进入</button>
+</view>
+<!-- logo -->
+<view class="img">
+  <image src="https://res.bdfai.com/koubei/dsf/xcx/lz/r_logo.jpg" mode=""/>
+</view>
+</view>
+
+

@@ -1,0 +1,438 @@
+.content{margin: 0;padding: 0;background-color: rgb(238, 237, 237);}
+.content .logo{
+  width: 100%;
+  background-color: white;
+  /* background-color: rgb(178, 214, 243); */
+  /* background-color: -webkit-linear-gradient(top,white,lightblue,rgb(83, 201, 248));; */
+  /* display: flex; */
+}
+.content .logo image{
+  width: 100%;
+  height: 125rpx;
+}
+/* banner */
+.banner{
+  width: 100%;
+  text-align: center;
+  margin-top: 10rpx;
+  height: 250rpx;
+  margin-bottom: 10rpx;
+}
+.banner .img image{
+  width: 720rpx;
+  height: 250rpx;
+  border-radius: 10rpx;
+}
+/* 公告头条 */
+.toutiao{
+  width: 96%;
+  height: 100rpx;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20rpx;
+  margin: 0 auto;
+  line-height: 100rpx;
+  display: flex;
+  border: 1rpx solid rgb(233, 231, 231);
+}
+.toutiao image{
+  width: 180rpx;
+  height: 50rpx;
+  margin: 24rpx 0 0 20rpx;
+}
+.toutiao text{
+  color: rgb(163, 154, 154);
+  font-size: 28rpx;
+  margin-left: 10rpx;
+}
+/* 挂号中心列表 */
+.guahaoList{
+  width: 96%;
+  height: 300rpx;
+  /* background-color: rgb(255, 255, 255); */
+  border-radius: 20rpx;
+  margin: 0 auto;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.guahaoList .guahao{
+  display: flex;
+  flex-direction: row;
+  width:48%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.774);
+  border-radius: 20rpx;
+  /* text-align: center; */
+  border: 1rpx solid rgb(233, 231, 231);
+}
+.guahaoList .guahao image{
+  width: 100rpx;
+  height: 120rpx;
+  margin-top: 130rpx;
+  margin-left: 10rpx;
+}
+.guahaoList .guahao .guahaozhongxin{
+  font-size: 36rpx;
+  font-weight: bold;
+  margin: 30rpx 0 20rpx 30rpx;
+  display: block;
+  text-align: left;
+}
+.guahaoList .guahao .zhuanyeyisheng{
+  color: rgba(0, 0, 0, 0.466);
+  /* margin-left: 30rpx; */
+  font-size: 28rpx;
+  text-align: left;
+  margin: 0rpx 0rpx 0 30rpx;
+}
+.guahaoList .guahaoList-left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.guahaoList .guahaoList-left .btn{
+  width: 70%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-weight: normal;
+}
+.guahaoList .guahaoList-left .dianhua{
+  width: 360rpx;
+  height: 150rpx;
+  display: flex;
+  background-color: rgb(253, 253, 253);
+  border: 1rpx solid rgb(233, 231, 231);
+  border-radius: 20rpx;
+}
+.guahaoList .guahaoList-left .dianhua .dianhuaList{
+  display: flex;
+  flex-direction: column;
+}
+.guahaoList .guahaoList-left .dianhua .dianhuazixun{
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.guahaoList .guahaoList-left .dianhua .dianji{
+  color: rgba(0, 0, 0, 0.466);
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+.guahaoList .guahaoList-left .dianhua image{
+  width: 90rpx;
+  height: 90rpx;
+  margin: 15rpx 0 0 30rpx;
+}
+.guahaoList .guahaoList-left .tuwen{
+  width: 360rpx;
+  height: 150rpx;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20rpx;
+  border: 1rpx solid rgb(233, 231, 231);
+  margin-top: 10rpx;
+}
+.guahaoList .guahaoList-left .tuwen button{
+  display: flex;
+  background-color: rgb(253, 253, 253);
+  width: 100%;
+  border-radius: 20rpx;
+}
+.guahaoList .guahaoList-left .tuwen .tuwenList{
+  display: flex;
+  flex-direction: column;
+}
+.guahaoList .guahaoList-left .tuwen .tuwenList .tuwenzixun{
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+}
+.guahaoList .guahaoList-left .tuwen .tuwenList .quantian{
+  color: rgba(0, 0, 0, 0.466);
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+.guahaoList .guahaoList-left .tuwen image{
+  width: 90rpx;
+  height: 90rpx;
+  margin: 15rpx 0 0 30rpx;
+} 
+/* 中部二维码 banner*/
+.centerBanner{
+  width: 100%;
+  text-align: center;
+  margin-top: 10rpx;
+}
+.centerBanner swiper{
+  height: 210rpx;
+}
+.centerBanner image{
+  width: 720rpx;
+  height: 210rpx;
+}
+/* 医院简介 */
+.yiyuanjianjie{
+  width: 96%;
+  height: 300rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+}
+.yiyuanjianjie .titie{
+  font-size: 36rpx;
+  font-weight: bold;
+  margin: 20rpx 0 0 20rpx;
+}
+.yiyuanjianjie .text{
+  font-size: 25rpx;
+  color: rgba(0, 0, 0, 0.63);
+  padding: 0 10rpx;
+  margin-top: 10rpx;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.yiyuanjianjie .xiangqing{
+  /* text-align: right;
+  margin-left: 300rpx; */
+  color: rgb(236, 202, 108);
+}
+/* 推荐医生 */
+.doctor{
+  width: 96%;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+}
+.doctor .title{
+  font-size: 36rpx;
+  font-weight: bold;
+  margin: 10rpx 0 0 20rpx;
+  line-height: 80rpx;
+}
+/* .doctor .title2{
+  color: rgb(236, 202, 108);
+  font-size: 26rpx;
+  margin-left: 380rpx;
+} */
+.doctor scroll-view{
+  width: 100%;
+  /* height: 530px; */
+}
+.doctor .doctorList{
+  width: 100%;
+}
+.doctor .doctorList .doctorListItem{
+  width: 100%;
+  height: 210rpx;
+  display: flex;
+  border-bottom: 2rpx solid rgb(126, 235, 83);
+  border-radius: 10rpx;
+}
+.doctor .doctorList .doctorListItem .doctorImg image{
+  width: 160rpx;
+  height: 160rpx;
+  margin-top: 20rpx;
+}
+.doctor .doctorList .doctorListItem .doctorInfo{
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.doctor .doctorList .doctorListItem .doctorInfo .name{
+  display: flex;
+}
+.doctor .doctorList .doctorListItem .doctorInfo .name .a{
+  font-size: 32rpx;
+}
+.doctor .doctorList .doctorListItem .doctorInfo .name .b{
+  color: rgb(99, 189, 231);
+  margin-left: 20rpx;
+  font-size: 28rpx;flex: 1;
+}
+.doctor .doctorList .doctorListItem .doctorInfo .name .c{
+  font-size: 28rpx;
+  color: white;
+  background-color: rgb(99, 202, 78);
+  padding: 8rpx 20rpx;
+  border-radius: 50rpx;
+}
+.doctor .doctorList .doctorListItem .doctorInfo .text text{
+  font-size: 26rpx;
+  color: rgba(0, 0, 0, 0.644);
+}
+/* 就诊套餐转美团 */
+.Package{
+  width: 96%;
+  border-radius: 10rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  /* background-color: rgba(77, 228, 57, 0.075); 
+	background-image:linear-gradient(rgba(63, 219, 43, 0.137),white); */
+}
+.Package .Package-title{
+  font-size: 36rpx;
+  font-weight: bold;
+  margin: 0rpx 0 0 20rpx;
+  padding-top: 20rpx;
+}
+.Package .Package-list{
+  width: 100%;
+  /* height: 500rpx; */
+  /* background-color: rgb(47, 143, 3); */
+  margin-bottom: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Package .Package-list .image{
+  width: 220rpx;
+  /* height: 220rpx; */
+  margin: 10rpx 10rpx;
+}
+.Package .Package-list image{
+  width: 220rpx;
+  height: 220rpx;
+  /* border-radius: 20rpx; */
+  /* border: 1rpx solid rgb(230, 229, 229); */
+  /* box-shadow: 1rpx 1rpx 5rpx 0rpx; */
+} 
+.Package .Package-list .image .title{
+  text-align: center;
+  font-size: 22rpx;
+}
+.Package .Package-list .clickImg{
+  text-align: center;
+}
+.Package .Package-list .clickImg span{
+  background-color: rgb(70, 171, 189);
+  color: rgb(255, 255, 255);
+  font-size: 26rpx;
+  padding: 5rpx 10rpx;
+  border-radius: 10rpx;
+}
+/* 热门问答 */
+.jiankang{
+  width: 96%;
+  margin: 0 auto;
+  /* height: 400rpx; */
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding-bottom: 50rpx;
+}
+.jiankang .top{
+  display: flex;
+  justify-content: space-between;
+}
+.jiankang .top .title{
+  font-size: 36rpx;
+  font-weight: bold;
+  margin: 20rpx 0 0 20rpx;
+}
+.jiankang .top .gengduo{
+  font-size: 30rpx;
+  color: rgba(0, 0, 0, 0.589);
+  margin: 20rpx 20rpx 0 0;
+}
+/* 热门问答默认样式 */
+.jiankang .textList{
+  height: 130rpx;
+  /* background-color: rgb(233, 175, 175); */
+  margin-top: 30rpx;
+  margin-left: 10rpx;
+  padding: 0 20rpx;
+  transition-property: height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+/* 热门问答展开样式 */
+.textListShow{
+  height: 250rpx;
+  /* background-color: rgb(233, 175, 175); */
+  margin-top: 30rpx;
+  margin-left: 10rpx;
+  padding: 0 20rpx;
+  transition-property: height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.textListItem .textTitle{
+  /* color: rgba(60, 168, 10, 0.795); */
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+/* 热门回答展开样式 */
+.active{
+  margin: 10rpx 20rpx 0 20rpx;
+}
+/* 热门回答默认样式 */
+.textListItem .text{
+  margin: 10rpx 20rpx 0 20rpx;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.textListItem text{
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.418);
+}
+/* 展开与收起按钮 */
+.contentState{
+  color: rgb(143, 145, 145);
+  font-size: 28rpx;
+  text-align: right;
+  margin-right: 30rpx;
+}
+
+/* 底部logo */
+.bottomLogo{
+  width: 100%;
+  height: 150rpx;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10rpx;
+}
+.bottomLogo .image{
+  width: 100%;
+  height: 150rpx;
+}
+/* 导诊悬浮 */
+.xuanfu{
+  position: fixed;
+  bottom: 200rpx;
+  right: 10rpx;
+}
+.xuanfu .btn{
+  background-color: rgba(112, 57, 57, 0);
+  width: 90rpx;
+  height: 90rpx;
+  padding: 0;
+}
+.xuanfu image{
+  width: 90rpx;
+  height: 90rpx;
+}
+/* 电话悬浮 */
+.phoneXuanfu{
+  position: fixed;
+  bottom: 300rpx;
+  right: 10rpx;
+}
+.phoneXuanfu image{
+  width: 90rpx;
+  height: 90rpx;
+}

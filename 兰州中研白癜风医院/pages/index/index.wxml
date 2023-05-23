@@ -1,0 +1,178 @@
+<view class="content">
+<!-- <login></login> -->
+<!-- 主页顶部logo -->
+  <view class="logo">
+    <image src="https://res.bdfai.com/koubei/dsf/xcx/lz/logo.png" mode=""/>
+    <!-- <input type="text" placeholder="搜索"/> -->
+  </view>
+  <!-- 轮播图 -->
+  <!-- <swiper indicator-dots="true" indicator-active-color="rgb(253, 253, 253)" autoplay="true" interval="3000">
+    <swiper-item>
+      <image src="/pages/image/兰州中研/1-1.png" mode=""/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/pages/image/兰州中研/1-2.png" mode=""/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/pages/image/兰州中研/1-3.png" mode=""/>
+    </swiper-item>
+  </swiper> -->
+  <view class="banner">
+    <view class="img"><image src="https://res.bdfai.com/koubei/dsf/xcx/lz/banner-1.png" mode=""/></view>
+  </view>
+  <!-- 公告头条 -->
+  <view class="toutiao">
+    <image src="https://res.bdfai.com/koubei/dsf/xcx/lz/ggtt.png" mode=""/>
+    <text>|</text>
+    <text class="text">兰州中研白癜风医院就诊提醒！</text>
+  </view>
+  <!-- 挂号中心列表 -->
+  <view class="guahaoList">
+  <!-- 挂号中心 -->
+  <view class="guahao" bindtap="toYuyue">
+      <view>
+        <text class="guahaozhongxin">挂号中心</text>
+        <text class="zhuanyeyisheng">专业医生团</text>
+        <view class="zhuanyeyisheng">满足更多需求</view>
+      </view>
+      <view><image src="https://res.bdfai.com/koubei/dsf/xcx/zz/gh.png" mode=""/></view>
+    </view>
+    <view class="guahaoList-left">
+    <!-- 电话咨询 -->
+      <view class="dianhua" bindtap="onCall">
+        <view class="dianhuaList">
+          <text class="dianhuazixun">电话咨询</text>
+          <text class="dianji">{{telephone}}</text>
+        </view>
+        <view>
+          <image src="https://res.bdfai.com/koubei/dsf/xcx/lz/dh.png" mode=""/>
+        </view>
+      </view>
+      <!-- 图文咨询 -->
+      <view class="tuwen" bindtap="onKuaishangtong">
+        <button open-type="contact" class="btn">
+          <view class="tuwenList">
+            <text class="tuwenzixun">客服在线</text>
+            <text class="quantian">全天候快速响应</text>
+          </view>
+          <view>
+            <image src="https://res.bdfai.com/koubei/dsf/xcx/lz/zx.png" mode=""/>
+        </view>
+        </button>
+      </view>
+    </view>
+  </view>
+  <!-- 中部banner轮播 -->
+  <view class="centerBanner">
+    <swiper indicator-dots="true" indicator-active-color="rgb(253, 253, 253)" autoplay="true" interval="3000">
+      <swiper-item>
+        <image src="https://res.bdfai.com/koubei/dsf/xcx/lz/zbtl-2.png" mode="" show-menu-by-longpress="true"/>
+      </swiper-item>
+      <swiper-item>
+        <image src="https://res.bdfai.com/koubei/dsf/xcx/lz/zbtl-1.png" mode=""/>
+      </swiper-item>
+    </swiper> 
+  </view>
+  <!-- 医院简介 -->
+  <view class="yiyuanjianjie">
+    <text class="titie">医院简介</text>
+    <text class="text" space="emsp" >{{yiyuanjianjie}}<text class="xiangqing">详情>></text> </text>
+  </view>
+  <!-- 推荐医生 -->
+  <view class="doctor">
+  <view>
+    <text class="title">推荐医生</text>
+    <!-- <text class="title2">上滑查看更多</text> -->
+  </view>
+    <scroll-view>
+    <!-- 医生列表 -->
+      <view class="doctorList" bindtap="toYuyue" wx:for="{{doctorList}}" wx:key="id">
+        <view class="doctorListItem">
+        <!-- 医生图片 -->
+          <view class="doctorImg">
+            <image src="{{item.image}}" mode=""/>
+          </view>
+          <!-- 医生信息 -->
+          <view class="doctorInfo">
+            <view class="name">
+              <text class="a">{{item.name}}</text>
+              <text class="b">{{item.zhiwu}}</text>
+              <text class="c">预约挂号</text>
+            </view>
+            <view class="text">
+              <text space="emsp">{{item.shangchang}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 就诊套餐转美团 -->
+  <!-- <view class="Package">
+    <view>
+      <view class="Package-title">预约套餐</view>
+      <view class="Package-list">
+        <view class="image">
+          <image bindtap="clickImg1" src="https://res.bdfai.com/koubei/dsf/xcx/lz/tc1.jpg" mode=""/>
+          <view class="title">白癜风确诊检查</view>
+        </view>
+        <view class="image">
+          <image bindtap="clickImg2" src="https://res.bdfai.com/koubei/dsf/xcx/lz/tc2.jpg" mode=""/>
+          <view class="title">美国三维皮肤CT</view>
+        </view>
+        <view class="image">
+          <image bindtap="clickImg3" src="https://res.bdfai.com/koubei/dsf/xcx/lz/tc3.jpg" mode=""/>
+          <view class="title">白癜风全套病因检查</view>
+        </view>
+        <view class="image">
+          <image bindtap="clickImg4" src="https://res.bdfai.com/koubei/dsf/xcx/lz/tc4.jpg" mode=""/>
+          <view class="title">美国308激光援助</view>
+        </view>
+        <view class="image">
+          <image bindtap="clickImg5" src="https://res.bdfai.com/koubei/dsf/xcx/lz/tc5.jpg" mode=""/>
+          <view class="title">白癜风检查代金券</view>
+        </view>
+        <view class="image">
+          <image bindtap="clickImg6" src="https://res.bdfai.com/koubei/dsf/xcx/lz/tc6.jpg" mode=""/>
+          <view class="title">白癜风治疗代金券</view>
+        </view>
+      </view>
+    </view>
+  </view> -->
+  <!-- 热门问答 -->
+  <view class="jiankang">
+    <view class="top">
+      <text class="title">热门问答</text>
+      <text class="gengduo">更多>></text>
+    </view>
+    <view class="{{item.state ? 'textListShow' : 'textList' }}" wx:for="{{PopularQ_A}}" wx:key="id">
+      <view class="textListItem">
+        <view class="textTitle">{{item.title}}</view>
+        <view class="{{item.state ? 'active' : 'text' }}">
+          <text class="name" space="emsp">{{item.content}}</text>
+        </view>
+        <view class="contentState">
+          <span bindtap="Cshow" wx:if="{{item.state==false}}" data-id="{{item.id}}">展开</span>
+          <span bindtap="Cshow" wx:else  data-id="{{item.id}}">收起</span>
+        </view>
+        
+      </view>
+    </view>
+  </view>
+    <!-- 底部logo -->
+    <view class="bottomLogo">
+    <image src="https://res.bdfai.com/koubei/dsf/xcx/lz/foot.jpg" mode="" class="image"  show-menu-by-longpress="true"/>
+  </view>
+  <!-- 导诊悬浮 -->
+  <view class="xuanfu">
+    <button open-type="contact" class="btn">
+      <image src="https://res.bdfai.com/koubei/dsf/xcx/lz/dzpf.png" mode=""/>
+    </button>
+  </view>
+    <!-- 电话悬浮 -->
+  <view class="phoneXuanfu">
+    <image src="https://res.bdfai.com/koubei/dsf/xcx/lz/ycdh.png" mode="" bindtap="onCall"/>
+  </view>
+</view>
+
+

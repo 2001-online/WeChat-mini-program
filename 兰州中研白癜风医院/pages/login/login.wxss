@@ -1,0 +1,68 @@
+.mask{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  /* height: 2000rpx; */
+  background-color: rgba(0, 0, 0, 0.521);
+  text-align: center;
+}
+.show {
+  opacity: 1;
+}
+.hide {
+  opacity: 0;
+  z-index: -1;
+}
+@keyframes showUp {
+  0% {
+    transform: translateY(100%); /* 初始位置 */
+  }
+  100% {
+    transform: translateY(0); /* 结束位置 */
+  }
+}
+.loginShow{
+  width: 100%;
+  height: 40%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20rpx 20rpx 0rpx 0rpx;
+  margin: 0 auto;
+  /* margin-top: 750rpx; */
+  animation: showUp 0.8s ease;
+  position: fixed;
+  bottom: 0;
+}
+.loginShow image{
+  width: 580rpx;
+  height: 130rpx;
+  margin-top: 50rpx;
+}
+.loginShow .wxLogin{
+  margin-top: 80rpx;
+  margin-bottom: 40rpx;
+}
+.loginShow .wxLogin button{
+  width: 90%;
+  background-color: rgb(116, 132, 219);
+  color: #eee;
+}
+.loginShow .phoneLogin button{
+  width: 40%;
+  color: rgb(92, 90, 90);
+  background-color: rgba(236, 230, 230, 0.801);
+  margin-top: 30rpx;
+}
+.mask input{
+  width: 340rpx;
+  font-size: 36rpx;
+  height: 80rpx;
+  border: 2rpx solid rgb(71, 174, 214);
+  /* border: 4rpx solid rgba(79, 231, 211, 0.76); */
+  border-radius: 10rpx;
+  display: inline-block;
+  margin-top: 30rpx;
+}

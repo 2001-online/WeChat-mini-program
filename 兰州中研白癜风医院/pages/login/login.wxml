@@ -1,0 +1,15 @@
+<view class="mask {{isShowMask ? 'show' : 'hide'}}">
+  <view class="loginShow">
+  <image src="https://res.bdfai.com/koubei/dsf/xcx/lz/tclogo.png" mode=""/>
+  <!-- <view class="wxLogin">
+    <button bindtap="onLogin" open-type="getUserInfo">微信用户一键登录</button>
+  </view> -->
+  <!-- <view>为了更好地为您服务 请先登录</view> -->
+  <input type="number" placeholder="请输入手机号码" bindinput="onphone" />
+  <view class="phoneLogin">
+    <button bindtap="click">登录</button>
+  </view>
+</view>
+</view>
+
+

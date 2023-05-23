@@ -1,0 +1,50 @@
+/* pages/online/online.wxss */
+.online{
+  margin: 0 auto;
+}
+.bgi{
+  position: fixed;
+  top: -500rpx;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.bgi image{
+  width: 100%;
+  height: 100%;
+}
+
+.showModel{
+  width: 600rpx;
+  height: 280rpx;
+  border-radius: 30rpx;
+  background-color: rgba(230, 230, 230, 0.644);
+  margin: 0 auto;
+  margin-top: 300rpx;
+  /* margin-top: 200rpx; */
+}
+.showModel .title{
+  font-weight: bold;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 40rpx;
+}
+.showModel .content{
+  color: rgba(0, 0, 0, 0.568);
+  text-align: center;
+}
+button{
+  margin-top: 30rpx;
+}
+.img{
+  width: 700rpx;
+  height: 525rpx;
+  margin: 0 auto;
+}
+image{
+  position: fixed;
+  bottom: -100rpx;
+  width: 700rpx;
+  height: 525rpx;
+}

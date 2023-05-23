@@ -1,0 +1,132 @@
+<view class="content">
+  <!-- 顶部banner -->
+  <view class="topBanner"><image src="https://res.bdfai.com/koubei/dsf/xcx/lz/2-banner.jpg" mode=""/></view>
+  <!-- 确认预约信息 -->
+  <view class="queren">
+    <view class="title"><text>确认预约信息</text></view>
+    <view class="content">
+    <!-- 就诊医院 -->
+      <view class="form-item1">
+        <text class="label">就诊医院：</text>
+        <text class="value">{{hospital}}</text>
+      </view>
+      <!-- 选择医生 -->
+      <view class="form-item2">
+        <text class="label"><text style="color: red;">*</text>选择医生：</text>
+        <view class="form-item2-border">
+          <picker class="value" mode="selector" range="{{doctorList}}" bindchange="onDoctorChange">
+            <text>{{selectedDoctor}}</text>
+          </picker>
+        </view>
+      </view>
+      <!-- 预约时间 -->
+      <view class="form-item2">
+        <text class="label"><text style="color: red;">*</text>预约时间：</text>
+        <view  class="form-item2-border">
+          <picker class="value" mode="date" value="{{selectedDate}}" start="{{dateString}}" bindchange="onDateChange">
+            <text>{{selectedDate}}</text>
+          </picker>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 添加就诊人基本信息 -->
+  <view class="queren">
+    <view class="title"><text>添加就诊人基本信息</text></view>
+    <view class="content">
+      <!-- *患者姓名 -->
+      <view class="form-item2">
+        <text class="label"><text style="color: red;">*</text>患者姓名：</text>
+        <view class="form-item2-border">
+          <input type="text" bindinput="onNameInput"/>
+        </view>
+      </view>
+      <!-- *联系电话 -->
+      <view class="form-item2">
+        <text class="label"><text style="color: red;">*</text>联系电话：</text>
+        <view class="form-item2-border">
+          <input type="number" bindinput="onPhoneInput"/>
+        </view>
+      </view>
+       <!-- *性别 -->
+       <view class="form-item2">
+        <text class="label" space="emsp"><text style="color: red;">*</text>性  别：</text>
+        <view class="form-item2-border">
+          <!-- <input type="text" placeholder="请输入性别" bindinput="onGenderInput" /> -->
+          <picker class="value" mode="selector" range="{{sex}}" bindchange="onGenderInput">
+            <text>{{selectedSex}}</text>
+          </picker>
+          
+        </view>
+      </view>
+      <!-- *年龄 -->
+      <view class="form-item2">
+        <text class="label" space="emsp"><text style="color: red;">*</text>年  龄：</text>
+        <view class="form-item2-border">
+          <input type="number" bindinput="onAgeInput" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 预约须知： -->
+  <view class="xuzhi">
+    <view class="title"><text>预约须知</text></view>
+    <view class="text">
+      <text>
+        1.预约成功后保持电话畅通，医生临时停诊导致预约失败，系统将发送短信至就诊人手机号。
+      </text>
+    </view>
+    <view class="text">
+      <text>
+        2.若不能按时就诊，请在就诊前联系医院退号（电话），多次预约不就诊将会被医院列入预约黑名单。
+      </text>
+    </view>
+    <view class="text">
+      <text>
+        3.请带上病例本及相关证件（身份证、医保卡、就诊卡）就诊，并至少提前半小时到达科室就诊。
+      </text>
+    </view>
+  </view>
+  <!-- 提交按钮 -->
+  <view class="click">
+    <button style="width: 600rpx;" bindtap="onSubmit">提交</button>
+  </view>
+  
+<!-- <view class="container">
+  <view class="form-item">
+    <text class="label">就诊医院：</text>
+    <text class="value">{{hospital}}</text>
+  </view>
+  <view class="form-item">
+    <text class="label">选择医生：</text>
+    <picker class="value" mode="selector" range="{{doctorList}}" bindchange="onDoctorChange">
+      <text>{{selectedDoctor}}</text>
+    </picker>
+  </view>
+  <view class="form-item">
+    <text class="label">预约时间：</text>
+    <picker class="value" mode="date" value="{{selectedDate}}" bindchange="onDateChange">
+      <text>{{selectedDate}}</text>
+    </picker>
+  </view>
+  <form>
+    <view class="form-item">
+      <text class="label">患者姓名：</text>
+      <input type="text" placeholder="请输入患者姓名" bindinput="onNameInput" />
+    </view>
+    <view class="form-item">
+      <text class="label">联系电话：</text>
+      <input type="number" placeholder="请输入联系电话" bindinput="onPhoneInput" />
+    </view>
+    <view class="form-item">
+      <text class="label">性别：</text>
+      <input type="text" placeholder="请输入性别" bindinput="onGenderInput" />
+    </view>
+    <view class="form-item">
+      <text class="label">年龄：</text>
+      <input type="number" placeholder="请输入年龄" bindinput="onAgeInput" />
+    </view>
+  </form>
+  <button class="submit-btn" bindtap="onSubmit">提交</button>
+</view> -->
+</view>
